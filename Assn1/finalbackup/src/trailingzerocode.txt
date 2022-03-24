@@ -1,0 +1,35 @@
+char* extend_to_word_size(char* number, int word_size)
+{
+    int size = strlen(number);
+    if(size > word_size)
+    {
+        printf("Error in extending\n");
+    }
+    else
+    {
+        char *newWord = malloc(sizeof(char)*(word_size+1));
+        for(int i = 0; i < word_size;i++)
+        {
+            if(i < size)
+            {
+                newWord[i] = number[i];
+            }
+            else
+            {
+                newWord[i] = '0';
+            }
+        }
+        newWord[word_size+1] = '\0';
+        free(number);
+        number = newWord; // Whats the point if we are returning the new pointer
+        return number;
+    }
+} 
+//If the length of the 'number' is greater than 'word_size' report error.
+//If the length of the 'number' is less than 'word_size' do the followings:
+//	Allocate enough memory for a new word.
+//	Fill the most significant extra digits of the word with zeros and copy
+//	the least significant digits from the number.
+//	Free the memory from the pointer 'number'.
+//	Point the new word by the pointer 'number'.
+ 

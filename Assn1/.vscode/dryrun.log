@@ -1,0 +1,5 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'c:/csci261'
+gcc -Wall -ggdb -lm -o C:\csci261\bin/convert C:\csci261\build/main.o C:\csci261\build/convert.o C:\csci261\build/utility.o
+make: Leaving directory 'c:/csci261'
+ 

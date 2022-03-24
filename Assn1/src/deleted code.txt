@@ -1,0 +1,22 @@
+int is_hex(char *number)
+{
+    int size = strlen(number);
+    char *number_no_prefix = malloc(sizeof(char) * size - 1); //Required size for a copy of number with no prefix
+
+    for (int i = 0; i < size; i++)
+    {
+        number_no_prefix[i] = number[i + 2]; //Copy digits of number to number no prefix
+    }
+
+    if (strlen(number_no_prefix) <= 8 /*HEX_MAX_DIGITS*/ && number[0] == '0' && number[1] == 'x' && are_hex_digits(number_no_prefix) == 1 /*TRUE*/)
+    {
+        free(number_no_prefix); //Free number_no_prefix as checking is already done
+        return 1;               /*TRUE*/
+    }
+    else
+    {
+        return -1; /*FALSE*/
+    }
+}
+//Return TRUE if the number of digits in parameter 'number' is within the limit
+//of a hex number, starts with the prefix '0x', and all the digits are hex digits.

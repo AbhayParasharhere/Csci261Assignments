@@ -1,0 +1,30 @@
+# Number-System conversion calculator
+
+This application is helpful in converting between binary number system, hexadecimal number system, decimal number system ,and fixed point number system.
+
+
+## Technologies
+
+It is recommended to run this application in Linux based systems.
+Your system must have GCC installed from the GNU compiler collection in order to successfully compile the application. You must have makefile installed on your system.
+
+
+## Build and Installation
+Use the Makefile provided with the application for installation and building the application.
+Command "make"  must be typed into the terminal for compiling the application.
+
+
+## Usage
+
+Command "make run"  must be typed into the terminal for running the application on your system.
+In order to remove the application from your system use command "make clean" in the terminal.
+
+
+## Contributors
+
+This program is developed by Doctor Kabir Humayun and Abhay Parashar.
+
+
+## License
+
+This is a free to use and modify application. To support this, all source files are provided with the application package.

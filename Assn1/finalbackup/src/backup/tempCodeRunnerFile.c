@@ -1,0 +1,1 @@
+int are_decimal_point_digits(char* number)
