@@ -1,2 +1,5 @@
-just a dummy file
-LETS SEE!
+1-  This file is created to check 
+    how to resolve conflicts
+2-  just a dummy file
+3-  LETS SEE!
+5- NEXT LINE TO BE ADDED!
