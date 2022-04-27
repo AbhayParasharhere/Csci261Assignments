@@ -2,3 +2,5 @@
     how to resolve conflicts
 2-  just a dummy file
 3-  LETS SEE!
+4- LiNE TO BE ADDED!
+5- For testing rebase
